@@ -16,5 +16,33 @@ namespace Picture_Viewer
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.Load(openFileDialog1.FileName); 
+            }
+        }
     }
 }
